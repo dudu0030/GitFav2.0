@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+:root {
+    font-size: 62.5%;
+    --ff-primary: "Roboto", sans-serif;
+    --text-color: #E1E1E6;
+    --background: #000000;
+    --fav-color: #065E7C;
+    --header-color: #092D38;
+    --card-dark-color: #06161B;
+    --remove-color: #F75A68;
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--background);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 5.43rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 18.37rem;
+}
+
+.search input {
+    width: 28.87rem;
+    height: 3rem;
+    border: 1px solid #000000;
+    border-radius: .4rem;
+    padding: 0 0.8rem;
+    background-color: #06181C;
+    margin-right: 0.5rem;
+
+    color: #ffff;
+}
+
+.search button {
+    background-color: var(--fav-color);
+    width: 10.62rem;
+    height: 3rem;
+    border-radius: 0.31rem;
+    border: none;
+
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFF;
+
+    cursor: pointer;
+}
+
+.search button:hover {
+    filter: brightness(1.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table * {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-color);
+
+    width: 25rem;
+}
+
+table th {
+    background: var(--header-color);
+    width: 31.5rem;
+    height: 4rem;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(even) {
+    background: #010c0e;
+}
+
+table tr:nth-child(odd) {
+    background: #06161B;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td .remove {
+    background: none;
+    border: none;
+
+    color: var(--remove-color);
+    cursor: pointer;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: 700;
+}
